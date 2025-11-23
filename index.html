@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Solutions - Professional Business Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-text">Ismail Solutions</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Ismail Solutions</h1>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Professional Business & Education Solutions</h1>
+                <p class="hero-subtitle">Offline applications designed for schools, businesses, and educational institutions</p>
+                <p class="tagline">Download and use our applications without internet connection</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn primary" onclick="scrollToSection('solutions')">View Applications</button>
+                    <button class="cta-btn secondary" onclick="scrollToSection('contact')">Request Custom Solution</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Solutions Section -->
+<!-- Solutions Section -->
+<section id="solutions" class="solutions">
+    <div class="container">
+        <h2 class="section-title">Our Applications</h2>
+        <p class="section-subtitle">Professional offline applications for education and business needs</p>
+        
+        <div class="solutions-grid">
+            <!-- Application 1 - Maths Master Challenge -->
+            <div class="solution-card">
+                <div class="solution-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 19h16v2H4zM16 3H8C6.34 3 5 4.34 5 6v12c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3zm-4 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3-9H9V6h6v6z" />
+                    </svg>
+                </div>
+                <h3>Maths Master Challenge</h3>
+                <p>Unlimited math practice app for kids with addition, subtraction, multiplication, and division questions. Features multiple difficulty levels and works completely offline.</p>
+                <div class="solution-features">
+                    <span>All Math Operations</span>
+                    <span>Multiple Difficulty Levels</span>
+                    <span>Completely Offline</span>
+                    <span>Unlimited Questions</span>
+                </div>
+                <div class="solution-info">
+                    <div class="info-item">
+                        <strong>Platform:</strong> Android
+                    </div>
+                    <div class="info-item">
+                        <strong>Requirement:</strong> Android 5.1+
+                    </div>
+                    <div class="info-item">
+                        <strong>Size:</strong> 15 MB
+                    </div>
+                    <div class="info-item">
+                        <strong>Version:</strong> 1.0
+                    </div>
+                </div>
+                <a href="https://drive.google.com/uc?export=download&id=1GPvmcnyz7B5dRMeKPF6Zj6lsWUQqVE7Q" class="download-btn install-btn" target="_blank" onclick="trackInstall('maths-master')">
+                    <span class="btn-icon">📱</span>
+                    Install Now
+                </a>
+                <div class="app-stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.8</strong>
+                        <span>Rating</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Offline</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Application 2 - Coming Soon -->
+            <div class="solution-card coming-soon">
+                <div class="solution-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 5.5V7H9V5.5L3 7V9L9 10.5V12L3 13.5V15.5L9 14V16L3 17.5V19.5L9 18V22H15V18L21 19.5V17.5L15 16V14L21 15.5V13.5L15 12V10.5L21 9Z" />
+                    </svg>
+                </div>
+                <h3>Student Management System</h3>
+                <p>Complete offline student database management system for schools. Track attendance, grades, and student information without internet.</p>
+                <div class="solution-features">
+                    <span>Attendance Tracking</span>
+                    <span>Grade Management</span>
+                    <span>Student Database</span>
+                </div>
+                <div class="solution-info">
+                    <div class="info-item">
+                        <strong>Platform:</strong> Android
+                    </div>
+                    <div class="info-item">
+                        <strong>Requirement:</strong> Android 5.1+
+                    </div>
+                </div>
+                <div class="coming-soon-badge">Coming Soon</div>
+                <button class="download-btn coming-soon-btn" disabled>
+                    Coming Soon
+                </button>
+            </div>
+            
+            <!-- Application 3 - Coming Soon -->
+            <div class="solution-card coming-soon">
+                <div class="solution-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 22V2L21 12L3 22Z" />
+                    </svg>
+                </div>
+                <h3>Business Inventory Manager</h3>
+                <p>Offline inventory management solution for small businesses. Track stock, sales, and generate reports without internet connection.</p>
+                <div class="solution-features">
+                    <span>Stock Management</span>
+                    <span>Sales Tracking</span>
+                    <span>Report Generation</span>
+                </div>
+                <div class="solution-info">
+                    <div class="info-item">
+                        <strong>Platform:</strong> Android
+                    </div>
+                    <div class="info-item">
+                        <strong>Requirement:</strong> Android 5.1+
+                    </div>
+                </div>
+                <div class="coming-soon-badge">Coming Soon</div>
+                <button class="download-btn coming-soon-btn" disabled>
+                    Coming Soon
+                </button>
+            </div>
+        </div>
+        
+        <!-- Enhanced Installation Guide -->
+        <div class="installation-guide">
+            <h3>Quick Installation Guide</h3>
+            <p class="guide-subtitle">Follow these simple steps to install the application</p>
+            
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Click Install Now</h4>
+                        <p>Tap the "Install Now" button above</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Open Package Installer</h4>
+                        <p>Select "Package Installer" from the options</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Allow Installation</h4>
+                        <p>Enable "Install from unknown sources" if prompted</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Complete Installation</h4>
+                        <p>Tap "Install" and wait for the process to complete</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="installation-features">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h5>Fast Installation</h5>
+                    <p>15MB app installs in seconds</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h5>Safe & Secure</h5>
+                    <p>No ads or hidden permissions</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h5>Optimized</h5>
+                    <p>Works on all Android devices</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌙</div>
+                    <h5>Completely Offline</h5>
+                    <p>No internet required after installation</p>
+                </div>
+            </div>
+            
+            <div class="security-note">
+                <div class="security-icon">🛡️</div>
+                <div class="security-content">
+                    <h4>Security Verified</h4>
+                    <p>This application is safe to install. It doesn't require any special permissions and works completely offline.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Company</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Software Solutions</h3>
+                    <p>Ismail Solutions specializes in developing professional android applications for educational institutions and small businesses. Our focus is on creating reliable, offline-capable software that addresses real-world challenges.</p>
+                    
+                    <p>We understand the importance of accessible technology, especially in environments with limited internet connectivity. All our applications are designed to work seamlessly without requiring constant internet access.</p>
+                    
+                    <h4>Our Expertise</h4>
+                    <p>With expertise in android application development, we create solutions that are both powerful and user-friendly. Our applications are built using robust technologies to ensure stability and performance.</p>
+                    
+                    <div class="expertise">
+                        <h4>Core Technologies</h4>
+                        <ul>
+                            <li>.NET Framework Desktop Applications</li>
+                            <li>Database Management Systems</li>
+                            <li>Offline-First Architecture</li>
+                            <li>User-Friendly Interface Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Contact us for custom solutions or technical support</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                            </svg>
+                        </div>
+                        <h4>Email</h4>
+                        <p>ismailmo9090@gmail.com</p>
+                        <span>We'll respond within 24 hours</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                        </div>
+                        <h4>Phone</h4>
+                        <p>+91 XXXXX XXXXX</p>
+                        <span>Monday to Friday, 9AM to 6PM</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                        </div>
+                        <h4>Office</h4>
+                        <p>Business Solutions Center</p>
+                        <span>Lucknow, Uttar Pardesh</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="custom">Custom Application</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Ismail Solutions</h3>
+                    <p>Professional android applications for education and business</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#solutions">Applications</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ismail Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
